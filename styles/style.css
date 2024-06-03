@@ -1,0 +1,97 @@
+:root {
+    --ylw: #F4D04E;
+    --gry: #7F7F7F;
+    --blk: #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--ylw);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blk);
+}
+
+a:hover {
+    color: var(--ylw);
+    transition: color 0.2s;
+}
+
+p {
+    color: var(--blk);
+}
+
+.card {
+    margin: auto;
+    width: 384px;
+    background-color: white;
+
+    border-radius: 20px;
+    border: 1px solid var(--blk);
+    box-shadow: 8px 8px var(--blk);
+}
+
+.card-grid {
+    display: grid;
+    row-gap: 12px;
+
+    margin: 24px;
+}
+
+.card-img {
+    border-radius: 20px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.tag {
+    background-color: var(--ylw);
+    border-radius: 4px;
+    padding-inline: 12px;
+    padding-block: 8px;
+    width: fit-content;
+}
+
+.content {
+    color: var(--gry);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    gap: 12px;
+}
+
+.author img {
+    width: 32px;
+}
+
+@media (max-width:375px) {
+    .card {
+        width: 327px;
+    }
+}
