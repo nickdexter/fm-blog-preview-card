@@ -73,6 +73,12 @@ p {
     padding-inline: 12px;
     padding-block: 8px;
     width: fit-content;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.date {
+    font-size: 14px;
 }
 
 .content {
@@ -90,8 +96,29 @@ p {
     width: 32px;
 }
 
+.author a {
+    font-size: 14px;
+    font-weight: 800;
+}
+
 @media (max-width:375px) {
     .card {
         width: 327px;
+    }
+
+    .tag {
+        font-size: 12px;
+    }
+
+    .date {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 20;
+    }
+
+    .content {
+        font-size: 14px;
     }
 }
